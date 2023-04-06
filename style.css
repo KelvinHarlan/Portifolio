@@ -1,0 +1,161 @@
+body {
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+
+
+}
+
+.color{
+    color: #a200ff80;
+}
+
+/*Navbar*/
+.menu-option {
+    display: block;
+    align-self: flex-end;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.menu-option a {
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: #a200ff80;
+    cursor: pointer;
+
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+   
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar .itens {
+    opacity: 1;
+    display: none;
+    animation-name: animation;
+    animation-duration: 2s;
+   
+
+}
+
+.navbar ul {
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+   
+    
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 10px;
+   
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: #a200ff80;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.navbar ul li a:hover {
+    background-color: #7d00c580;
+}
+
+/*profile*/
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    
+}
+
+.profile .image-profile{
+    width: 150px;
+}
+
+.name{
+    margin: 15px 0 0 -50px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    
+
+}
+.function-name{
+    margin: 0;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin-right: -50px;
+}
+
+.image-border{
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 30px #a200ff80;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.efect{
+    background-color: #a200ff80;
+    height: 40px;
+    width: 100%;
+}
+
+/*Profile contact*/
+
+.profile .profile-contact{
+    margin-top: 20px;
+    width: 200px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile .profile-contact li{
+    padding: 10px;
+    color: #fff;
+    list-style: none;
+
+}
+
+.profile .profile-contact li a{
+    display: block;
+    text-align: center;
+    width: 150px;
+    background-color: #a200ff80;
+    color: #fff;
+    padding: 10px 50px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 30px #a200ff80;
+
+}
+
+.profile .profile-contact li i{
+    margin: 0 5px;
+}
