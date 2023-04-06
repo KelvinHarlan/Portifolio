@@ -20,7 +20,7 @@ body {
 
 .menu-option a {
     color: #fff;
-    padding: 8px 10px;
+    padding: 8px 15px;
     border-radius: 5px;
     background-color: #a200ff80;
     cursor: pointer;
@@ -94,11 +94,30 @@ body {
     width: 150px;
 }
 
+@keyframes animation-name{
+    to{
+        margin: 15px 0 0 -50px;
+    }
+    from{
+        margin: 15px 0 0 -101vw;
+    }
+}
+@keyframes animation-function-name{
+    to{
+        
+    }
+    from{
+        margin:101vw;
+    }
+}
+
 .name{
     margin: 15px 0 0 -50px;
     text-transform: uppercase;
     width: 100%;
     text-align: center;
+    animation-name: animation-name;
+    animation-duration: .5s;
     
 
 }
@@ -108,15 +127,28 @@ body {
     width: 100%;
     text-align: center;
     margin-right: -50px;
+    animation-name: animation-function-name;
+    animation-duration: .5s;
+}
+
+@keyframes animation-image{
+    0%{
+        box-shadow: 0px 0px 35px #a200ff80;
+    }
+    100%{
+        box-shadow: 0px 0px 35px #a200ff;
+    }
 }
 
 .image-border{
     border: 2px solid #fff;
-    box-shadow: 0px 0px 30px #a200ff80;
+    box-shadow: 0px 0px 35px #a200ff80;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
+    animation-name: animation-image;
+    animation-duration: 2s;
 }
 
 .efect{
