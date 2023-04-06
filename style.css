@@ -104,7 +104,7 @@ body {
 }
 @keyframes animation-function-name{
     to{
-        
+        margin-right: -50px;
     }
     from{
         margin:101vw;
