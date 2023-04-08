@@ -27,11 +27,11 @@ function skillsLogos(){
 function left(){
     let img = document.querySelector('.img-box img');
     index > 1 ? img.src = `./imagens/0${index -=1}.jpg` : img.src = `./imagens/0${index =9}.jpg`;
-    console.log(index -1)
+   
 }
 
 function right(){
     let img = document.querySelector('.img-box img');
     index < 9 ? img.src = `./imagens/0${index +=1}.jpg` : img.src = `./imagens/0${index =1}.jpg`;
-    console.log(index -1)
+    
 }
