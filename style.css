@@ -6,8 +6,9 @@ body {
 
 }
 
-.color{
-    color: #a200ff80;
+.color {
+    color: #a200ff;
+
 }
 
 /*Navbar*/
@@ -30,7 +31,7 @@ body {
 .navbar {
     background-color: rgb(0, 0, 0);
     border-radius: 5px;
-   
+
 }
 
 @keyframes animation {
@@ -47,23 +48,23 @@ body {
     opacity: 1;
     display: none;
     animation-name: animation;
-    animation-duration: 2s;
-   
+    animation-duration: 1s;
+
 
 }
 
 .navbar ul {
-    display:flex;
+    display: flex;
     flex-direction: column;
     padding: 0;
-   
-    
+
+
 }
 
 .navbar ul li {
     list-style: none;
-    padding: 10px;
-   
+    padding: 5px;
+
 }
 
 .navbar ul li a {
@@ -81,66 +82,70 @@ body {
 }
 
 /*profile*/
-.profile{
+.profile {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 5px;
-    
+
 }
 
-.profile .image-profile{
+.profile .image-profile {
     width: 150px;
 }
 
-@keyframes animation-name{
-    to{
+@keyframes animation-name {
+    to {
         margin: 15px 0 0 -50px;
     }
-    from{
+
+    from {
         margin: 15px 0 0 -101vw;
     }
 }
-@keyframes animation-function-name{
-    to{
+
+@keyframes animation-function-name {
+    to {
         margin-right: -50px;
     }
-    from{
-        margin:101vw;
+
+    from {
+        margin: 101vw;
     }
 }
 
-.name{
+.name {
     margin: 15px 0 0 -50px;
     text-transform: uppercase;
     width: 100%;
     text-align: center;
     animation-name: animation-name;
     animation-duration: .5s;
-    
+
 
 }
-.function-name{
+
+.function-name {
     margin: 0;
     text-transform: uppercase;
-    width: 100%;
     text-align: center;
     margin-right: -50px;
     animation-name: animation-function-name;
     animation-duration: .5s;
 }
 
-@keyframes animation-image{
-    0%{
+@keyframes animation-image {
+    0% {
         box-shadow: 0px 0px 35px #a200ff80;
     }
-    100%{
+
+    100% {
         box-shadow: 0px 0px 35px #a200ff;
     }
 }
 
-.image-border{
+.image-border {
     border: 2px solid #fff;
     box-shadow: 0px 0px 35px #a200ff80;
     width: 150px;
@@ -151,15 +156,16 @@ body {
     animation-duration: 2s;
 }
 
-.efect{
+.efect {
     background-color: #a200ff80;
     height: 40px;
     width: 100%;
 }
 
+/*Section-01*/
 /*Profile contact*/
 
-.profile .profile-contact{
+.profile .profile-contact {
     margin-top: 20px;
     width: 200px;
     padding: 0;
@@ -167,14 +173,15 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.profile .profile-contact li{
+
+.profile .profile-contact li {
     padding: 10px;
     color: #fff;
     list-style: none;
 
 }
 
-.profile .profile-contact li a{
+.profile .profile-contact li a {
     display: block;
     text-align: center;
     width: 150px;
@@ -188,6 +195,103 @@ body {
 
 }
 
-.profile .profile-contact li i{
+@keyframes animation-contact {
+    0% {
+        rotate: 2deg;
+    }
+
+    25% {
+        rotate: -2deg;
+    }
+
+    50% {
+        rotate: 0deg;
+    }
+
+    75% {
+        rotate: 2deg;
+    }
+
+    100% {
+        rotate: -2deg;
+    }
+
+    125% {
+        rotate: 0;
+    }
+}
+
+.profile .profile-contact li a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+    animation-name: animation-contact;
+    animation-duration: 0.3s;
+}
+
+
+.profile .profile-contact li i {
     margin: 0 5px;
+}
+
+
+/*Section-02*/
+/*Skills*/
+
+.skills-title {
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.line {
+    height: 2px;
+    width: 30%;
+    display: block;
+    background-color: #a200ff;
+    margin: 0 0 10px 0;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+}
+
+.skill-card {
+    width: 100vw;
+    max-width: 425px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.skill-card a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    width: 30px;
+}
+
+.skill-card a:hover {
+    color: #a200ff;
+}
+
+.skill-card .img-box {
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+
+
+}
+
+.skill-card .img-box img {
+    width: 100vw;
+    max-width: 400px;
+    border-radius: 10px;
+    height: auto;
 }
